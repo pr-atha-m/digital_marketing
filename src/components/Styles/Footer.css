@@ -1,0 +1,72 @@
+/* Footer.css */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap');
+
+.footer {
+  background-color: #1A5319;
+  color: #F7F9F2;
+  padding: 40px 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+}
+
+.footer-section h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #80AF81;
+}
+
+.footer-section p {
+  font-size: 1.2em;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer-section .icon {
+  margin-right: 10px;
+  color: #80AF81;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #F7F9F2;
+  font-size: 1.5em;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #80AF81;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #80AF81;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 1em;
+  margin: 0;
+} */

@@ -1,0 +1,116 @@
+/* Services.css */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font-family: "Poppins", sans-serif; */
+
+#services {
+  padding: 20px;
+  background-color: #f7f9f2;
+}
+
+#services h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+  font-family: "Kanit", sans-serif;
+}
+
+.slick-list {
+  padding: 0 40px; /* Ensure proper padding */
+}
+
+.slick-slide {
+  padding: 0 10px;
+  box-sizing: border-box; /* Ensure padding is considered in the width */
+}
+
+.service-card {
+  background: #f7f9f2;
+  border: 1px solid #e8c5e5;
+  border-radius: 10px;
+  padding: 20px; /* Increased padding for height */
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-sizing: border-box; /* Ensure padding is considered in the width */
+  height: 300px; /* Adjust height */
+  width: calc(33.333% - 20px); /* Ensure three cards fit in the row */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-card .icon {
+  font-size: 2.5em;
+  color: #91ddcf;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #1a5319;
+}
+
+.service-card p {
+  font-size: 0.9em;
+  color: #508d4e;
+  padding: 0 5px;
+}
+
+.slick-next,
+.slick-prev {
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+  background: #80af81;
+  border-radius: 50%;
+  padding: 10px;
+  color: #80af81 !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  font-size: 20px;
+  color: #80af81 !important;
+}
+
+@media (max-width: 1024px) {
+  .slick-slide {
+    padding: 0 10px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slick-slide {
+    padding: 0 5px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+  }
+
+  .slick-next:before,
+  .slick-prev:before {
+    font-size: 15px;
+  }
+}
