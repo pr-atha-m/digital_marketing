@@ -1,40 +1,49 @@
-/* Home.css */
-
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+  margin: 0;
+  overflow-x: hidden; /* Remove horizontal scrollbar */
+}
+
 .home-container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding: 20px;
   background-color: #f7f9f2;
-  height: 100vh; /* Full viewport height */
+  height: 80vh; /* Full viewport height */
   text-align: center;
 }
 
 .left-content {
-  margin-top: 40px;
+  margin-top: 40px; /* Reduced margin for smaller screens */
 }
 
 .left-content h1 {
   color: #333;
-  font-size: 2em;
   font-family: "Kanit", sans-serif;
   font-weight: bold;
   margin-bottom: 10px;
+  font-size: 2.5em; /* Increased font size for larger screens */
 }
 
 .left-content p {
   color: #666;
   font-family: "Poppins", sans-serif;
-  font-size: 0.8px;
+  font-size: 1.2em; /* Increased font size for larger screens */
   margin-bottom: 20px;
+}
+
+.right-content img {
+  max-width: 100%;
+  width: 500px; /* Increased image width for larger screens */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px; /* Reduced margin for smaller screens */
 }
 
 .contact-button {
   padding: 10px 20px;
-  font-size: 0.8em;
+  font-size: 1em;
   color: #fff;
   background-color: #91ddcf;
   border: none;
@@ -51,38 +60,71 @@
   transform: translateY(-3px);
 }
 
-.right-content img {
-  max-width: 100%;
-  width: 400px; /* Set a maximum width for the image */
-  height: auto;
-  border-radius: 10px;
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  background-color: #25d366; /* WhatsApp green for consistency */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
 }
 
-/* Responsive Styles */
+.whatsapp-button:hover {
+  background-color: #1ebe57; /* Darker green on hover */
+}
+
+/* Responsive Design */
 @media (min-width: 768px) {
   .home-container {
-    flex-direction: row;
-    text-align: left;
+    flex-direction: row; /* Row layout for larger screens */
+    justify-content: space-between;
+    padding: 0 80px;
+    text-align: left; /* Left-align text for larger screens */
+    margin-top: 60px; /* Adjust top margin for larger screens */
   }
 
   .left-content {
-    flex: 1;
-    margin-right: 20px;
-    margin-bottom: 0;
+    margin-top: 0;
   }
 
-  .right-content {
-    flex: 1;
-    text-align: center; /* Center the image horizontally */
-  }
-}
-
-@media (min-width: 1024px) {
   .left-content h1 {
-    font-size: 2.5em; /* Increase heading size for larger screens */
+    font-size: 3em; /* Larger font size for medium screens */
   }
 
   .left-content p {
-    font-size: 1em; /* Adjust paragraph size for larger screens */
+    font-size: 1.5em; /* Larger font size for medium screens */
+  }
+
+  .right-content img {
+    width: 600px; /* Larger image size for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .home-container {
+    flex-direction: column; /* Column layout for smaller screens */
+    padding: 20px;
+    text-align: left; /* Left-align text for smaller screens */
+  }
+
+  .left-content {
+    margin-top: 10px; /* Reduce top margin further for smaller screens */
+  }
+
+  .left-content h1 {
+    font-size: 2em; /* Smaller font size for mobile screens */
+  }
+
+  .left-content p {
+    font-size: 1em; /* Smaller font size for mobile screens */
+  }
+
+  .right-content img {
+    width: 100%; /* Full width image for mobile screens */
+    margin-top: 10px; /* Further reduce top margin for smaller screens */
   }
 }

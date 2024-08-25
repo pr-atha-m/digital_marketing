@@ -52,14 +52,17 @@
 .contact-details {
   border-radius: 10px;
   margin-right: 20px;
+  display: flex;
+  flex-direction: column; /* Ensure items are stacked vertically */
 }
 
 .contact-details p {
   display: flex;
-  align-items: center;
+  align-items: center; /* Align icon and text vertically */
   font-size: 1.2em;
   margin: 10px 0;
   color: #1a5319;
+  text-align: left; /* Ensure text is left-aligned */
 }
 
 .contact-details p a {
@@ -76,6 +79,13 @@
 .contact-details .icon {
   margin-right: 10px;
   color: #1a5319;
+  flex-shrink: 0; /* Prevent the icon from shrinking */
+  font-size: 1.2em; /* Ensure the icon size matches the text */
+}
+
+.contact-details span {
+  display: block; /* Ensure the address text starts on a new line */
+  margin-left: 10px; /* Space between address label and the text */
 }
 
 .contact-form {
@@ -142,26 +152,35 @@
   transform: translateY(-3px);
 }
 
-/* Responsive Styles */
-@media (max-width: 767px) {
-  .contact-card {
-    flex-direction: column;
-  }
-
+/* Responsive Design */
+@media (max-width: 768px) {
   .contact-content {
-    flex-direction: column;
+    flex-direction: column; /* Stack contact-details and contact-form vertically */
   }
 
   .contact-details {
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Add margin to separate contact-details and contact-form */
+  }
+
+  .contact-details p {
+    font-size: 1em; /* Reduce text size for smaller screens */
+  }
+
+  .contact-form h2 {
+    font-size: 1.5em; /* Reduce heading size for smaller screens */
   }
 
   .contact-form .input-group {
-    flex-direction: column;
+    flex-direction: column; /* Stack inputs vertically on small screens */
   }
 
-  .contact-form .input-group input {
-    margin-bottom: 20px;
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9em; /* Reduce input and textarea font size for smaller screens */
+  }
+
+  .contact-form button {
+    font-size: 1em; /* Reduce button font size for smaller screens */
   }
 }

@@ -7,16 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 2px 20px;
   background: rgba(145, 221, 207, 0.9);
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
   z-index: 1000;
   font-family: "Montserrat", sans-serif;
-}
-
-.navbar.scrolled {
-  background: rgba(145, 221, 207, 0.7);
-  backdrop-filter: blur(10px);
 }
 
 .navbar .navbar-container {
@@ -24,6 +19,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+.navbar.scrolled {
+  background: rgba(145, 221, 207, 0.7);
+  backdrop-filter: blur(10px);
+}
+
+.navbar .logo {
+  flex: 1;
 }
 
 .navbar .logo a {
@@ -37,16 +40,19 @@
   font-size: 1.8rem;
   color: #f7f9f2;
   cursor: pointer;
+  margin-left: auto; /* Ensure the icon is aligned to the right */
 }
 
 .navbar .nav-links {
   display: flex;
+  margin-right: 40px;
   gap: 20px;
   list-style: none; /* Remove dots */
 }
 
 .nav-links {
-  margin-right: 80px;
+  display: flex; /* Ensure the nav links are on the same line */
+  align-items: center; /* Center align items vertically */
 }
 
 .navbar .nav-links a {
@@ -56,32 +62,37 @@
 }
 
 .navbar .nav-links a:hover {
-  color: black;
+  color: rgb(53, 78, 198);
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 15px 25px;
+  }
   .navbar .menu-icon {
     display: block;
     position: absolute;
     top: 15px;
-    right: 45px;
+    right: 65px; /* Adjusted to ensure it's within the screen */
   }
 
   .navbar .nav-links {
-    display: none;
+    display: flex;
     flex-direction: column;
+    top: 43px;
     width: 100%;
     position: absolute;
-    top: 60px;
-    left: -100%;
-    background: rgba(145, 221, 207, 0.9);
+    left: -20px;
+    background: rgba(145, 221, 207);
     transition: all 0.5s ease;
+    align-items: center; /* Center align menu items */
+    padding: 20px 0; /* Add padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transform: translateX(-100%); /* Hide menu offscreen */
   }
 
   .navbar .nav-links.active {
-    display: flex;
-    left: -10%;
-    top: 33px !important;
+    transform: translateX(0); /* Show menu when active */
   }
 
   .navbar .nav-links li {
