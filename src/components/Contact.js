@@ -65,10 +65,8 @@ const Contact = () => {
               </p>
               <p>
                 <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-                Address:
-                <span style={{ marginLeft: "10px" }}>
-                  Friends Colony Katol Road
-                </span>
+                Office:
+                <span style={{ marginLeft: "10px" }}>Nagpur & Delhi</span>
               </p>
             </div>
             <div className="contact-form">

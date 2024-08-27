@@ -12,18 +12,22 @@ const FollowUs = () => (
   <div className="follow-us">
     <h2>Follow Us</h2>
     <div className="social-icons">
-      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faFacebook} />
-      </a>
+      </a> */}
       <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faTwitter} />
       </a>
-      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <a
+        href="https://www.instagram.com/digital_marketing_and_pr/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <FontAwesomeIcon icon={faInstagram} />
       </a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} />
-      </a>
+      </a> */}
     </div>
   </div>
 );
