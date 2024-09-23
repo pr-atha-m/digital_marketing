@@ -52,23 +52,42 @@ const Contact = () => {
           </div>
           <div className="contact-content">
             <div className="contact-details">
-              <p>
-                <FontAwesomeIcon icon={faPhone} className="icon" />
-                Phone: <a href="tel:+1234567890">+91 7972911849</a>
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                Email:{" "}
-                <a href="mailto:mbdigitalcreations@gmail.com">
-                  mbdigitalcreations@gmail.com
-                </a>
-              </p>
-              <p>
-                <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
-                Office:
-                <span style={{ marginLeft: "10px" }}>Nagpur & Delhi</span>
-              </p>
+              <div className="contact-location">
+                <h2>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />{" "}
+                  Delhi
+                </h2>
+                <p>
+                  <FontAwesomeIcon icon={faPhone} className="icon" />
+                  Phone: <a href="tel:+911234567890">+91 9582454633</a>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                  Email:{" "}
+                  <a href="mailto:ddigitalmarketing1069@gmail.com">
+                    digitalmarketing1069@gmail.com
+                  </a>
+                </p>
+              </div>
+              <div className="contact-location">
+                <h2>
+                  <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />{" "}
+                  Nagpur
+                </h2>
+                <p>
+                  <FontAwesomeIcon icon={faPhone} className="icon" />
+                  Phone: <a href="tel:+919876543210">+91 7774006457</a>
+                </p>
+                <p>
+                  <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                  Email:{" "}
+                  <a href="mailto:mbdigitalcreations@gmail.com">
+                    mbdigitalcreations@gmail.com
+                  </a>
+                </p>
+              </div>
             </div>
+
             <div className="contact-form">
               <form onSubmit={sendEmail}>
                 <div className="input-group">

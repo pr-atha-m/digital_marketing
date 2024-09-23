@@ -152,6 +152,21 @@
   transform: translateY(-3px);
 }
 
+.contact-location {
+  margin-bottom: 20px; /* Space between office sections */
+}
+
+.contact-location h2 {
+  font-size: 1.5em;
+  color: #1a5319;
+  margin-bottom: 10px;
+}
+
+.contact-location h2 .icon {
+  font-size: 0.9em; /* Reduce the icon size */
+  margin-right: 4px; /* Optional: Adjust space between icon and text */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-content {
