@@ -30,7 +30,7 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
         <div className="logo">
-          <a href="#home">Digital Crafters</a>
+          <a href="#home">Digibrand Wave</a>
         </div>
         <div className="menu-icon" onClick={toggleMenu}>
           {isOpen ? <FaTimes /> : <FaBars />}
